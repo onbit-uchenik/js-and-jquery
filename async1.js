@@ -1,4 +1,6 @@
+//calcualting execution time:
 let start = process.hrtime();
+
 function add(getX,getY,cb) {
     var x, y;
     getX( function(xVal){                
@@ -14,8 +16,7 @@ function add(getX,getY,cb) {
     }
     });
 }
-    // `fetchX()` and `fetchY()` are sync or async
-    // functions
+ // fetchX()` and `fetchY()` are  async functions
 fetchX = function(callback){
     setTimeout(function(){
         callback(2);
